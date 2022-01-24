@@ -65,6 +65,20 @@ else
   let &rtp = g:_spacevim_root_dir . ',' . $VIMRUNTIME
 endif
 
+if executable('clipboard-provider')
+  let g:clipboard = {
+          \ 'name': 'myClipboard',
+          \     'copy': {
+          \         '+': 'clipboard-provider copy',
+          \         '*': 'clipboard-provider copy',
+          \     },
+          \     'paste': {
+          \         '+': 'clipboard-provider paste',
+          \         '*': 'clipboard-provider paste',
+          \     },
+          \ }
+endif
+
 call SpaceVim#begin()
 
 call SpaceVim#custom#load()
@@ -73,3 +87,4 @@ call SpaceVim#default#keyBindings()
 
 call SpaceVim#end()
 " vim:set et sw=2 cc=80:
+

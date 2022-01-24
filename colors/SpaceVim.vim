@@ -154,3 +154,5 @@ call s:hi('startifySection' , 68  , '' , 'bold' , 'bold')
 if s:is_dark
   set background=dark
 endif
+
+

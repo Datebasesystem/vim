@@ -74,7 +74,6 @@ syntax match   neosnippetExtend
 syntax match   neosnippetPlaceHolderComment
       \ '{\d\+:\zs#:.\{-}\ze\\\@<!}' contained
 
-highlight def link neosnippetKeyword Statement
 highlight def link neosnippetString String
 highlight def link neosnippetName Identifier
 highlight def link neosnippetAbbr Normal
