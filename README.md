@@ -19,7 +19,7 @@
 
 我的vim配置，基于neovim 和 Spacevim插件
 
-**neovim版本 v0.4.4 **
+**neovim版本** v0.4.4
 ps：测试中发现v0.5.1 版本好像有兼容性问题。
 
 注意：
