@@ -1,12 +1,35 @@
-[![SpaceVim](https://spacevim.org/logo.png)](https://spacevim.org)
+我的vim配置，基于neovim 和 Spacevim插件
 
-[Wiki](https://github.com/SpaceVim/SpaceVim/wiki) \|
-[Community](https://spacevim.org/community/) \|
-[Sponsors](https://spacevim.org/sponsors/) \|
-[Twitter](https://twitter.com/SpaceVim) \|
+**neovim版本 v0.4.4 **
+ps：测试中发现v0.5.1 版本好像有兼容性问题。
+
+注意：
+该项目并不能保证开箱即用，需要安装一些环境配置，主要包括：
+
+1. :checkhealth provider 检查中出现的环境：
+    [python环境]
+    pip3 install --user --upgrade pynvim
+    pip install --user --upgrade pynvim
+
+2. 在整个工程中搜索需要安装ag
+    https://github.com/ggreer/the_silver_searcher
+
+3. 使用剪切板需要把clipboard-provider脚本放在/usr/local/bin下。
+
+4. 把.SpaceVim.d 目录放在～下。
+
+
+=====================================================================================================================
+
+[![SpaceVim](docs/logo.png)](https://spacevim.org/cn/)
+
+[维基](https://gitee.com/spacevim/SpaceVim/wikis) \|
+[中文社区](https://spacevim.org/cn/community/) \|
+[捐助](https://spacevim.org/cn/sponsors/) \|
+[推特](https://twitter.com/SpaceVim) \|
 [中文官网](https://spacevim.org/cn/)
 
-[![Gitter](https://img.shields.io/gitter/room/SpaceVim/SpaceVim?color=%2364CEAA)](https://gitter.im/SpaceVim/SpaceVim)
+[![Gitter](https://img.shields.io/gitter/room/SpaceVim/SpaceVim?color=%2364CEAA)](https://gitter.im/SpaceVim/cn)
 [![build](https://img.shields.io/github/workflow/status/SpaceVim/SpaceVim/test)](https://github.com/SpaceVim/SpaceVim/actions/workflows/check.yml?query=branch%3Amaster)
 [![Codecov coverage](https://img.shields.io/codecov/c/github/SpaceVim/SpaceVim.svg)](https://codecov.io/gh/SpaceVim/SpaceVim)
 [![Version](https://img.shields.io/badge/version-1.9.0--dev-8700FF.svg)](https://github.com/SpaceVim/SpaceVim/releases)
@@ -15,40 +38,45 @@
 
 ![welcome page](https://user-images.githubusercontent.com/13142418/135842225-addb0f53-7520-4a8b-bdd2-c4f7e98b3253.png)
 
-[SpaceVim](https://spacevim.org/) is a community-driven modular Vim distribution. It manages collections
-of plugins in layers, which help to collect related packages together to provide IDE-like features.
+[SpaceVim](https://spacevim.org/cn/) 是一个社区驱动的模块化 Vim/Neovim 配置集合，以模块的方式组织管理插件以
+及相关配置，为不同的语言开发量身定制了相关的开发模块，该模块提供代码自动补全，
+语法检查、格式化、调试、REPL 等特性。用户仅需载入相关语言的模块即可得到一个开箱
+即用的 Vim-IDE。
 
-The last release is [v1.8.0](https://spacevim.org/SpaceVim-release-v1.8.0/), check out [following-HEAD](https://github.com/SpaceVim/SpaceVim/wiki/Following-HEAD) page for what happened since last release.
+当前最新的稳定版为[v1.8.0](https://spacevim.org/SpaceVim-release-v1.8.0/)，[following-HEAD](https://github.com/SpaceVim/SpaceVim/wiki/Following-HEAD) 页面罗列了
+master 分支最新的更新以及变动。
 
-**See the following links below for more information:**
+**推荐阅读:**
 
-- [Quick Start Guide](https://spacevim.org/quick-start-guide/): A simple guide for Beginners.
-- [Documentation](https://spacevim.org/documentation/): The full documentation about using SpaceVim.
-- [Available Layers](https://spacevim.org/layers/): A list of all available layers included in SpaceVim.
+- [入门指南](https://spacevim.org/cn/quick-start-guide/)
+- [用户文档](https://spacevim.org/cn/documentation/)
+- [可用模块](https://spacevim.org/cn/layers/)
 
-## Support SpaceVim
+## 支持 SpaceVim
 
-This project wouldn't exist without all the people who [contributed](CONTRIBUTING.md),
-We are thankful for any contributions from the community.
+这个项目的存在需要要感谢所有[参与贡献](contribution .md)的人，
+我们感谢社区的任何贡献。
 
 <a href="https://github.com/SpaceVim/SpaceVim/graphs/contributors"><img src="https://opencollective.com/spacevim/contributors.svg?width=890&button=false" /></a>
 
-The best way to support SpaceVim is to contribute to it either by reporting bugs, helping the community on the [Gitter Chat](https://gitter.im/SpaceVim/SpaceVim), or sending pull requests.
+支持 SpaceVim 最好的方法是通过报告 bug 来完善SpaceVim，或者在[Gitter 聊天室](https://gitter.im/SpaceVim/cn)上帮助社区其他用户
+或者直接提交拉取请求。
 
-For more information please check our [development guidelines](https://spacevim.org/development/).
+想要了解更多信息，请查看我们的[开发者手册](https://spacevim.org/cn/development/)。
 
-If you use SpaceVim in your daily work and feel that it has made your life easier,
-please consider buying me a coffee once in a while!
+如果你在日常工作中使用 SpaceVim，觉得它让你更轻松，
 
-<a href='https://ko-fi.com/spacevim' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=f' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+请考虑偶尔请我喝杯咖啡!
 
-## Credits & Thanks
+| 微信                                                     | 支付宝                                                     |
+| -------------------------------------------------------- | ---------------------------------------------------------- |
+| <img src="docs/img/weixin.png" height="150" width="150"> | <img src="docs/img/zhifubao.png" height="150" width="150"> |
 
-- [Hack-SpaceVim](https://github.com/Gabirel/Hack-SpaceVim) by [@Gabirel](https://github.com/Gabirel)
-- [SpaceVimTutorial](https://everettjf.gitbooks.io/spacevimtutorial/content/) by [@everettjf](https://github.com/everettjf)
-- [10-minutes-to-SpaceVim](https://github.com/Jackiexiao/10-minutes-to-SpaceVim) by [@Jackiexiao](https://github.com/Jackiexiao)
-- [A First Look At SpaceVim](https://www.youtube.com/watch?v=iXPS_NHLj9k) by [@DistroTube](https://www.youtube.com/channel/UCVls1GmFKf6WlTraIb_IaJg)
-- [vimdoc](https://github.com/google/vimdoc) generate doc file for SpaceVim
-- Authors of all the plugins used in SpaceVim.
+## 鸣谢
+
+- [@Gabirel](https://github.com/Gabirel) 的 [《Hack-SpaceVim》](https://github.com/Gabirel/Hack-SpaceVim)
+- [@everettjf](https://github.com/everettjf) 的 [《SpaceVimTutorial》](https://everettjf.gitbooks.io/spacevimtutorial/content/)
+- [vimdoc](https://github.com/google/vimdoc)：自动生成帮助文件
+- SpaceVim 中所使用所有插件的作者
 
 <!-- vim:set nowrap: -->
