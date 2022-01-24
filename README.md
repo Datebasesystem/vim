@@ -1,3 +1,22 @@
+[![SpaceVim](docs/logo.png)](https://spacevim.org/cn/)
+
+[维基](https://gitee.com/spacevim/SpaceVim/wikis) \|
+[中文社区](https://spacevim.org/cn/community/) \|
+[捐助](https://spacevim.org/cn/sponsors/) \|
+[推特](https://twitter.com/SpaceVim) \|
+[中文官网](https://spacevim.org/cn/)
+
+[![Gitter](https://img.shields.io/gitter/room/SpaceVim/SpaceVim?color=%2364CEAA)](https://gitter.im/SpaceVim/cn)
+[![build](https://img.shields.io/github/workflow/status/SpaceVim/SpaceVim/test)](https://github.com/SpaceVim/SpaceVim/actions/workflows/check.yml?query=branch%3Amaster)
+[![Codecov coverage](https://img.shields.io/codecov/c/github/SpaceVim/SpaceVim.svg)](https://codecov.io/gh/SpaceVim/SpaceVim)
+[![Version](https://img.shields.io/badge/version-1.9.0--dev-8700FF.svg)](https://github.com/SpaceVim/SpaceVim/releases)
+[![GPLv3 License](https://img.shields.io/badge/license-GPLv3-blue.svg)](https://github.com/SpaceVim/SpaceVim/blob/master/LICENSE)
+[![Doc](https://img.shields.io/badge/doc-%3Ah%20SpaceVim-orange.svg)](doc/SpaceVim.txt)
+
+![welcome page](https://user-images.githubusercontent.com/13142418/135842225-addb0f53-7520-4a8b-bdd2-c4f7e98b3253.png)
+
+==================================================================
+
 我的vim配置，基于neovim 和 Spacevim插件
 
 **neovim版本 v0.4.4 **
@@ -19,24 +38,7 @@ ps：测试中发现v0.5.1 版本好像有兼容性问题。
 4. 把.SpaceVim.d 目录放在～下。
 
 
-=====================================================================================================================
-
-[![SpaceVim](docs/logo.png)](https://spacevim.org/cn/)
-
-[维基](https://gitee.com/spacevim/SpaceVim/wikis) \|
-[中文社区](https://spacevim.org/cn/community/) \|
-[捐助](https://spacevim.org/cn/sponsors/) \|
-[推特](https://twitter.com/SpaceVim) \|
-[中文官网](https://spacevim.org/cn/)
-
-[![Gitter](https://img.shields.io/gitter/room/SpaceVim/SpaceVim?color=%2364CEAA)](https://gitter.im/SpaceVim/cn)
-[![build](https://img.shields.io/github/workflow/status/SpaceVim/SpaceVim/test)](https://github.com/SpaceVim/SpaceVim/actions/workflows/check.yml?query=branch%3Amaster)
-[![Codecov coverage](https://img.shields.io/codecov/c/github/SpaceVim/SpaceVim.svg)](https://codecov.io/gh/SpaceVim/SpaceVim)
-[![Version](https://img.shields.io/badge/version-1.9.0--dev-8700FF.svg)](https://github.com/SpaceVim/SpaceVim/releases)
-[![GPLv3 License](https://img.shields.io/badge/license-GPLv3-blue.svg)](https://github.com/SpaceVim/SpaceVim/blob/master/LICENSE)
-[![Doc](https://img.shields.io/badge/doc-%3Ah%20SpaceVim-orange.svg)](doc/SpaceVim.txt)
-
-![welcome page](https://user-images.githubusercontent.com/13142418/135842225-addb0f53-7520-4a8b-bdd2-c4f7e98b3253.png)
+==================================================================
 
 [SpaceVim](https://spacevim.org/cn/) 是一个社区驱动的模块化 Vim/Neovim 配置集合，以模块的方式组织管理插件以
 及相关配置，为不同的语言开发量身定制了相关的开发模块，该模块提供代码自动补全，
